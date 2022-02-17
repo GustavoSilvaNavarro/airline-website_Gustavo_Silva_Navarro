@@ -1,0 +1,39 @@
+@import './variables.css';
+
+/*MAIN*/
+.containerCard__title{
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 2rem 0;
+}
+
+.cardHeader--title {
+    background-color: var(--dark-color-navbar);
+}
+
+.cardHeader--title > h2 {
+    color: #fff;
+}
+
+.cardBody {
+    padding: 0.6rem 0;
+}
+.card-body > p {
+    color: var(--light-color-textCard);
+}
+
+.cardBody__top {
+    display: flex;
+}
+
+.cardBody__top > div:first-child {
+    margin-right: 2rem;
+}
+
+.travelCard__midInfo {
+    padding: 1.4rem 0rem;
+}
+
+.travelCardMid_info--input {
+    width: 40% !important;
+}
