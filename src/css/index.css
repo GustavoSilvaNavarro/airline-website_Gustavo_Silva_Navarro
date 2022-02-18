@@ -381,10 +381,12 @@
     justify-content: space-around;
 }
 
-.container__socialMedia > i {
+.container__socialMedia > a {
     margin: 0.5rem;
     font-size: 1.8rem;
     cursor: pointer;
+    text-decoration: none;
+    transition: all 400ms ease;
 }
 
 .fa-facebook-square {
@@ -401,6 +403,10 @@
 
 .fa-youtube {
     color: #FF0000;
+}
+
+.container__socialMedia > a:hover {
+    transform: translateY(-12%);
 }
 
 
