@@ -90,6 +90,15 @@
     display: none;
 }
 
+.linksMenu__burgerMenu {
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
+
+#burgerMenu__checkBtn {
+    display: none;
+}
 
 
 /*MAIN*/
@@ -795,13 +804,34 @@
 
 @media (max-width: 910px) {
     /*NAVBAR*/
-    .linksMenu__disappear {
-        display: none;
+    .linksMenu__burgerMenu {
+        display: block;
     }
 
-    .linksMenu__burgerMenu {
-        display: inline;
-        font-size: 3rem;
+    .navBar__linksMenu ul {
+        position: absolute;
+        width: 100%;
+        /* height: 100vh; */
+        background-color: #57606f;
+        top: 121.23px;
+        left: -100%;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+        z-index: 3;
+        transition: all 0.5s;
+    }
+
+    #burgerMenu__checkBtn:checked ~ ul {
+        left: 0;
+    }
+
+    .navBar__linksMenu li a:hover {
+        border-radius: 0px;
+        border: none;
+        background-color: transparent;
+        color: var(--dark-color-navbar);
     }
 
     .headerSearch__input {
@@ -868,10 +898,6 @@
 
 @media (max-width: 740px) {
     /*NAVBAR*/
-    .linksMenu__burgerMenu {
-        font-size: 2rem;
-    }
-
     .headerSearch__input {
         width: 100%;
     }
@@ -895,6 +921,18 @@
     /*NAVBAR*/
     .headHeader__middle {
         display: none;
+    }
+
+    .navBar__linksMenu ul {
+        flex-direction: column;
+    }
+
+    .navBar__linksMenu li {
+        padding: 1rem 0;
+    }
+
+    .navBar__linksMenu li a {
+        font-size: 1.3rem;
     }
 
     /*SECTION*/
@@ -921,7 +959,16 @@
     /*NAVBAR*/
     .headerNavBar__logo {
         width: 110px;
-    }    
+    }
+
+    .linksMenu__burgerMenu {
+        font-size: 2rem;
+    }
+
+    .navBar__linksMenu ul {
+        top: 93.34px;
+    }
+
     /*MAIN*/
     .travelMain__title {
         display: none;
