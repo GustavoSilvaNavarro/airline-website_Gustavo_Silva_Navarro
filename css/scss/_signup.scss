@@ -1,0 +1,52 @@
+/*SIGN UP PAGE*/
+/*MAIN*/
+.accountInfo {
+    margin: 2rem 0 3rem 0;
+}
+
+.accountInfo__title,
+.accountInfo__subtitle {
+    color: $dark-color-navbar;
+    font-weight: 400;
+    margin-bottom: $size;
+}
+
+.accountInfo__login {
+    margin-bottom: $size * 2.5;
+
+    > a {
+        text-decoration: none;
+    }
+}
+
+.accountInfo__extraInfo {
+    font-weight: 500;
+}
+
+.accountInfo__inputLabel {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+
+    > label {
+        font-size: $size * 1.25;
+    }
+
+    > input,
+    > select {
+        width: 30%;
+        padding: 0.5rem 0.3rem;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+
+    > input:focus,
+    > select:focus {
+        border: 2px solid $dark-color-navbar;
+    }
+}
+
+.accountInfo__checkbox {
+    margin: 1.3rem 0;
+    width: 30%;
+}

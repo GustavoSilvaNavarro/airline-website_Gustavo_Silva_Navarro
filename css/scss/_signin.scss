@@ -1,0 +1,42 @@
+/*SIGN IN PAGE*/
+/*MAIN*/
+.text-center > h3 {
+    margin: 1rem 0;
+    color: $dark-color-navbar;
+}
+
+.travelCardMid__info--input {
+    width: 92% !important;
+}
+
+.travelCard__info--check {
+    margin: 1rem 2rem 1rem 0.7rem;
+
+    > input {
+        margin-right: $size * 0.6;
+    }
+}
+
+.travelCard__button {
+    display: flex;
+    justify-content: center;
+}
+
+.createAccount {
+    text-align: end;
+    padding: 2rem 0 0 0;
+    margin-right: $size;
+
+    > p {
+        margin: 0;
+    }
+
+    > a {
+        text-decoration: none;
+    }
+}
+
+/*FOOTER*/
+.travelFooter--signin {
+    display: none;
+}

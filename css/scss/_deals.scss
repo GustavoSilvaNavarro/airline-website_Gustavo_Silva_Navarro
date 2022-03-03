@@ -1,0 +1,96 @@
+/*DEALS PAGE*/
+/*SECTION TITLE*/
+.sectionDeals__title {
+    background: url(../img/img-pack/nepal.jpg) no-repeat center center;
+    background-size: cover;
+    border-radius: 0px 0px 15px 15px;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    > h1 {
+        color: #fff;
+        margin-left: $size * 1.5;
+    }
+}
+
+/*MAIN*/
+.popularPlaces {
+    margin: $size * 2;
+}
+
+.popularPlaces__subtitle {
+    font-size: $size * 2;
+    padding-bottom: $size * 1.5;
+    color: $dark-color-navbar;
+}
+
+.gridCard__info--bodyCard {
+    transform: translateY(-12%);
+}
+
+.gridCard__info {
+    h4 {
+        color: $dark-color-navbar;
+    }
+
+    i {
+        font-size: $size * 2.5;
+        color: $dark-color-navbar;
+        display: flex;
+        justify-content: flex-end;    
+    }
+}
+
+.popularPlaces__button {
+    padding: 1rem 2rem;
+    margin: 3rem 0 2rem 0;
+}
+
+/*SECTION INFORMATION*/
+.sectionPreparations {
+    margin-bottom: $size * 3;
+}
+
+.sectionInfo {
+    padding: 3.5rem 1.5rem;
+    background-color: $dark-color-navbar;
+}
+
+.sectionInfo__subtitle {
+    font-weight: 400;
+}
+
+.sectionInfo__info {
+    margin-top: $size * 0.8;
+}
+
+.sectionInfo__image {
+    height: 130px;
+}
+
+.gridCard__info--body {
+    transition: all 400ms ease;
+}
+
+.gridCard__info--body:hover {
+    transform: translateY(-6%);
+}
+
+.gridCard__title--info {
+    color: $dark-color-navbar;
+}
+
+.gridCard__title--text {
+    color: $light-color-textCard;
+}
+
+.gridCard__info {
+    > a {
+        text-decoration: none;
+    }
+}
+
+.gridContainer--section{
+    gap: 1em !important;
+}
