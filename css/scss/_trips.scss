@@ -1,5 +1,5 @@
-/*TRIPS PAGE*/
-/*MAIN*/
+//TRIPS PAGE
+//MAIN
 .containerCard__title {
     margin: 2rem 0;
     font: {
@@ -15,7 +15,6 @@
         color: #fff;
     }
 }
-
 
 .cardBody {
     padding: 0.6rem 0;
@@ -40,7 +39,7 @@
     width: 40% !important;
 }
 
-/*FAQs SECTION*/
+//FAQs SECTION
 .containerAccordion {
     width: 100%;
 }
@@ -123,5 +122,54 @@
         .fa-angle-up {
             display: block;
         }        
+    }
+}
+
+//MEDIAS QUERYS TRIPS
+@media (max-width: 767px) {
+    //MY TRIPS PAGE
+    //MAIN
+    .travelCardMid_info--input {
+        width: 60% !important;
+    }
+
+    //SIGN UP
+    .accountInfo__grid {
+        display: none;
+    }
+
+    .accountInfo__login {
+        margin-bottom: $size * 1.5;
+    }
+
+    .accountInfo__inputLabel {
+        > input,
+        > select {
+            width: 70%;
+        }
+    }
+
+    .accountInfo__checkbox {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    //MY TRIPS PAGE
+    .travelCardMid_info--input {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 330px) {
+    //TRIPS
+    .cardBody__top {
+        flex-direction: column;
+    }
+
+    .travelCardMid_info--input {
+        label {
+            font-size: 20px;
+        }
     }
 }

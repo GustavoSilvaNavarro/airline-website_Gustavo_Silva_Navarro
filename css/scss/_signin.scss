@@ -1,5 +1,5 @@
-/*SIGN IN PAGE*/
-/*MAIN*/
+//SIGN IN PAGE
+//MAIN
 .text-center > h3 {
     margin: 1rem 0;
     color: $dark-color-navbar;
@@ -36,7 +36,17 @@
     }
 }
 
-/*FOOTER*/
+//FOOTER
 .travelFooter--signin {
     display: none;
+}
+
+//MEDIAS QUERYS SIGNIN
+@media (max-width: 330px) {
+    //SIGN IN
+    .travelCardMid__info--input {
+        > label {
+            font-size: 20px;
+        }
+    }
 }

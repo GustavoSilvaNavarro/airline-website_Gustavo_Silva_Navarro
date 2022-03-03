@@ -1,5 +1,5 @@
-/*DEALS PAGE*/
-/*SECTION TITLE*/
+//DEALS PAGE
+//SECTION TITLE
 .sectionDeals__title {
     background: url(../img/img-pack/nepal.jpg) no-repeat center center;
     background-size: cover;
@@ -14,7 +14,7 @@
     }
 }
 
-/*MAIN*/
+//MAIN
 .popularPlaces {
     margin: $size * 2;
 }
@@ -47,7 +47,7 @@
     margin: 3rem 0 2rem 0;
 }
 
-/*SECTION INFORMATION*/
+//SECTION INFORMATION
 .sectionPreparations {
     margin-bottom: $size * 3;
 }
@@ -93,4 +93,25 @@
 
 .gridContainer--section{
     gap: 1em !important;
+}
+
+//MEDIAS QUERYS DEALS
+@media (max-width: 740px) {
+    //DEALS
+    .sectionDeals__title {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    //DEALS
+    .sectionDeals__title {
+        height: 120px;
+    }
+
+    .popularPlaces__button {
+        padding: 1rem 1rem;
+        margin: 1rem 0 1rem 0;
+        font-size: 14px;
+    }
 }

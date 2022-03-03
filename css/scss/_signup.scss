@@ -1,5 +1,5 @@
-/*SIGN UP PAGE*/
-/*MAIN*/
+//SIGN UP PAGE
+//MAIN
 .accountInfo {
     margin: 2rem 0 3rem 0;
 }
@@ -49,4 +49,60 @@
 .accountInfo__checkbox {
     margin: 1.3rem 0;
     width: 30%;
+}
+
+//MEDIA QUERYS SIGN UP
+@media (max-width: 991px) {
+    //SIGN UP
+    .accountInfo__inputLabel {
+        > input,
+        > select {
+            width: 60%;
+        }
+    }
+
+    .accountInfo__checkbox {
+        width: 60%;
+    }
+}
+
+@media (max-width: 767px) {
+    //SIGN UP
+    .accountInfo__grid {
+        display: none;
+    }
+
+    .accountInfo__login {
+        margin-bottom: $size * 1.5;
+    }
+
+    .accountInfo__inputLabel {
+        > input,
+        > select {
+            width: 70%;
+        }
+    }
+
+    .accountInfo__checkbox {
+        width: 70%;
+    }
+}
+
+@media (max-width: 540px) {
+    //SIGN UP
+    .accountInfo__inputLabel {
+        > input,
+        > select {
+            width: 90%;
+        }
+    }
+
+    .accountInfo__checkbox {
+        width: 90%;
+    }
+
+    .accountInfo__button{
+        display: flex;
+        justify-content: center;
+    }
 }
