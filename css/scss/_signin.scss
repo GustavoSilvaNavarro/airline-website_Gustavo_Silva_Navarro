@@ -1,3 +1,4 @@
+/*
 //SIGN IN PAGE
 //MAIN
 .text-center > h3 {
@@ -18,8 +19,8 @@
 }
 
 .travelCard__button {
-    display: flex;
-    justify-content: center;
+    display: map-get($modelado, flexible);
+    justify-content: map-get($modelado, centro);
 }
 
 .createAccount {
@@ -32,14 +33,15 @@
     }
 
     > a {
-        text-decoration: none;
+        text-decoration: map-get($modelado, ninguno);
     }
 }
 
 //FOOTER
 .travelFooter--signin {
-    display: none;
+    display: map-get($modelado, ninguno);
 }
+
 
 //MEDIAS QUERYS SIGNIN
 @media (max-width: 330px) {
@@ -50,3 +52,4 @@
         }
     }
 }
+*/

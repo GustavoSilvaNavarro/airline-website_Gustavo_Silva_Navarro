@@ -30,9 +30,9 @@
 .headHeader__search {
   display: flex;
   align-items: center;
+  border-radius: 15px;
   background-color: white;
   padding: 0.2rem 0.4rem;
-  border-radius: 15px;
 }
 .headHeader__search i {
   color: #7f8c8d;
@@ -63,8 +63,8 @@
 }
 .navBar__linksMenu li a:hover {
   border-radius: 25px;
-  border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
 }
 
 .linksMenu__burgerMenu {
@@ -204,16 +204,16 @@
 
 @keyframes animate {
   0%, 100% {
-    background-image: url(../img/back-photos/photo1.jpg);
+    background-image: url("../img/back-photos/photo1.jpg");
   }
   25% {
-    background-image: url(../img/back-photos/photo3.jpg);
+    background-image: url("../img/back-photos/photo3.jpg");
   }
   50% {
-    background-image: url(../img/back-photos/photo4.jpg);
+    background-image: url("../img/back-photos/photo4.jpg");
   }
   75% {
-    background-image: url(../img/back-photos/photo5.jpg);
+    background-image: url("../img/back-photos/photo5.jpg");
   }
 }
 .sectionCard__title {
@@ -274,9 +274,7 @@
   padding: 0.6rem;
 }
 
-.cardInfo__location,
-.cardInfo__bottom,
-.cardPrice__element {
+.cardInfo__bottom, .cardInfo__location, .cardPrice__element {
   display: flex;
   align-items: center;
 }
@@ -307,7 +305,9 @@
 }
 
 .cardInfo__price > p,
-.cardInfo__bottom > p {
+.cardInfo__bottom > p,
+.cardPrice__element > p,
+.cardInfo__location > p {
   margin: 0;
 }
 
@@ -322,266 +322,10 @@
   font-weight: 700;
 }
 
-.cardInfo__bottom p:first-child {
+.cardInfo__bottom p:first-child, .cardPrice__element p:first-child, .cardInfo__location p:first-child {
   margin-right: 0.9rem;
 }
 
-.travelFooter {
-  width: 100%;
-  background-color: #d4d4d0;
-  padding: 0.5rem 0;
-}
-
-.travelFooter__container {
-  margin: 0 auto;
-  width: 95%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.travelFooter__brand > p {
-  font-size: 1.2rem;
-  margin: 0;
-}
-
-.container__socialMedia {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.container__socialMedia > a {
-  margin: 0.5rem;
-  font-size: 1.8rem;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 400ms ease;
-}
-.container__socialMedia > a:hover {
-  transform: translateY(-12%);
-}
-
-.fa-facebook-square {
-  color: #3b5998;
-}
-
-.fa-twitter-square {
-  color: #00acee;
-}
-
-.fa-instagram-square {
-  color: #c1558b;
-}
-
-.fa-youtube {
-  color: #FF0000;
-}
-
-@media (max-width: 1200px) {
-  .headerSearch__input {
-    width: 350px;
-  }
-}
-@media (max-width: 1085px) {
-  .headerSearch__input {
-    width: 100%;
-  }
-
-  .gridContainer {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 991px) {
-  .travelCard_top {
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0rem 0.8rem;
-  }
-
-  .travelCard_mid--location {
-    padding: 0.3rem 1rem;
-  }
-
-  .travelCard__mid--date,
-.travelCard__mid--passanger {
-    flex-direction: column;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-  }
-
-  .travelCard__mid--date .icon,
-.travelCard__mid--passanger .icon {
-    display: none;
-  }
-
-  .travelCard__mid--date .travelCardMid_info:first-child,
-.travelCard__mid--passanger .travelCardMid_info:first-child {
-    margin-bottom: 1.5rem;
-  }
-}
-@media (max-width: 910px) {
-  .linksMenu__burgerMenu {
-    display: block;
-    padding: 0.2rem 0.6rem;
-  }
-  .linksMenu__burgerMenu:hover {
-    border-radius: 25px;
-    border: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-
-  .navBar__linksMenu ul {
-    position: absolute;
-    width: 100%;
-    background-color: #57606f;
-    top: 121.23px;
-    left: -100%;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 0;
-    z-index: 3;
-    transition: all 0.5s;
-  }
-
-  #burgerMenu__checkBtn:checked ~ ul {
-    left: 0;
-  }
-
-  .navBar__linksMenu li a:hover {
-    border-radius: 0px;
-    border: none;
-    background-color: transparent;
-    color: #024;
-  }
-
-  .headerSearch__input {
-    width: 400px;
-  }
-}
-@media (max-width: 767px) {
-  .travelCard_top {
-    margin: 1.2rem 0.8rem;
-  }
-
-  .travelCard__mid--date,
-.travelCard__mid--passanger {
-    flex-direction: row;
-    margin-bottom: 0rem;
-    margin-top: 0rem;
-  }
-
-  .travelCard__mid--date {
-    padding: 1.4rem 1rem;
-  }
-
-  .travelCard__mid--passanger {
-    padding: 0.8rem 1rem;
-  }
-
-  .travelCard__mid--date .icon,
-.travelCard__mid--passanger .icon {
-    display: block;
-  }
-
-  .travelCard__mid--date .travelCardMid_info:first-child,
-.travelCard__mid--passanger .travelCardMid_info:first-child {
-    margin-bottom: 0rem;
-  }
-}
-@media (max-width: 740px) {
-  .headerSearch__input {
-    width: 100%;
-  }
-
-  .footerContainer__first {
-    display: none;
-  }
-
-  .travelFooter__container {
-    flex-direction: column;
-  }
-}
-@media (max-width: 540px) {
-  .headHeader__middle {
-    display: none;
-  }
-
-  .navBar__linksMenu ul {
-    flex-direction: column;
-  }
-  .navBar__linksMenu li {
-    padding: 1rem 0;
-  }
-  .navBar__linksMenu li a {
-    font-size: 1.3rem;
-  }
-
-  .gridContainer {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 480px) {
-  .headerNavBar__logo {
-    width: 110px;
-  }
-
-  .linksMenu__burgerMenu {
-    font-size: 2rem;
-    padding: 0.2rem 1rem;
-  }
-
-  .navBar__linksMenu ul {
-    top: 93.34px;
-  }
-
-  .travelMain__title {
-    display: none;
-  }
-
-  .travelCard_top {
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0rem 0.8rem;
-  }
-
-  .travelCard_mid--location {
-    padding: 0.3rem 1rem;
-    flex-direction: column;
-    margin-top: 1rem;
-  }
-
-  .travelCardMid_info--toInput {
-    margin-top: 1.2rem;
-  }
-
-  .icon {
-    display: none;
-  }
-
-  .travelCard__mid--date,
-.travelCard__mid--passanger {
-    flex-direction: column;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-  }
-
-  .travelCard__mid--date .icon,
-.travelCard__mid--passanger .icon {
-    display: none;
-  }
-
-  .travelCard__mid--date .travelCardMid_info:first-child,
-.travelCard__mid--passanger .travelCardMid_info:first-child {
-    margin-bottom: 1.5rem;
-  }
-}
-@media (max-width: 330px) {
-  .gridCard__img {
-    height: 150px;
-  }
-}
 .containerCard__title {
   margin: 2rem 0;
   font-size: 3rem;
@@ -690,44 +434,8 @@
   display: block;
 }
 
-@media (max-width: 767px) {
-  .travelCardMid_info--input {
-    width: 60% !important;
-  }
-
-  .accountInfo__grid {
-    display: none;
-  }
-
-  .accountInfo__login {
-    margin-bottom: 1.5rem;
-  }
-
-  .accountInfo__inputLabel > input,
-.accountInfo__inputLabel > select {
-    width: 70%;
-  }
-
-  .accountInfo__checkbox {
-    width: 70%;
-  }
-}
-@media (max-width: 480px) {
-  .travelCardMid_info--input {
-    width: 100% !important;
-  }
-}
-@media (max-width: 330px) {
-  .cardBody__top {
-    flex-direction: column;
-  }
-
-  .travelCardMid_info--input label {
-    font-size: 20px;
-  }
-}
 .sectionDeals__title {
-  background: url(../img/img-pack/nepal.jpg) no-repeat center center;
+  background: url("../img/img-pack/nepal.jpg") no-repeat center center;
   background-size: cover;
   border-radius: 0px 0px 15px 15px;
   height: 200px;
@@ -793,7 +501,6 @@
 .gridCard__info--body {
   transition: all 400ms ease;
 }
-
 .gridCard__info--body:hover {
   transform: translateY(-6%);
 }
@@ -814,22 +521,6 @@
   gap: 1em !important;
 }
 
-@media (max-width: 740px) {
-  .sectionDeals__title {
-    height: 150px;
-  }
-}
-@media (max-width: 480px) {
-  .sectionDeals__title {
-    height: 120px;
-  }
-
-  .popularPlaces__button {
-    padding: 1rem 1rem;
-    margin: 1rem 0 1rem 0;
-    font-size: 14px;
-  }
-}
 .text-center > h3 {
   margin: 1rem 0;
   color: #024;
@@ -867,11 +558,6 @@
   display: none;
 }
 
-@media (max-width: 330px) {
-  .travelCardMid__info--input > label {
-    font-size: 20px;
-  }
-}
 .accountInfo {
   margin: 2rem 0 3rem 0;
 }
@@ -919,7 +605,100 @@
   width: 30%;
 }
 
+.travelFooter {
+  width: 100%;
+  background-color: #d4d4d0;
+  padding: 0.5rem 0;
+}
+
+.travelFooter__container {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.travelFooter__brand > p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.container__socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.container__socialMedia > a {
+  margin: 0.5rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 400ms ease;
+}
+.container__socialMedia > a:hover {
+  transform: translateY(-12%);
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+}
+
+.fa-twitter-square {
+  color: #00acee;
+}
+
+.fa-instagram-square {
+  color: #c1558b;
+}
+
+.fa-youtube {
+  color: #FF0000;
+}
+
+@media (max-width: 1200px) {
+  .headerSearch__input {
+    width: 350px;
+  }
+}
+@media (max-width: 1085px) {
+  .headerSearch__input {
+    width: 100%;
+  }
+
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (max-width: 991px) {
+  .travelCard_top {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0rem 0.8rem;
+  }
+
+  .travelCard_mid--location {
+    padding: 0.3rem 1rem;
+  }
+
+  .travelCard__mid--date,
+.travelCard__mid--passanger {
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .travelCard__mid--date .icon,
+.travelCard__mid--passanger .icon {
+    display: none;
+  }
+
+  .travelCard__mid--date .travelCardMid_info:first-child,
+.travelCard__mid--passanger .travelCardMid_info:first-child {
+    margin-bottom: 1.5rem;
+  }
+
   .accountInfo__inputLabel > input,
 .accountInfo__inputLabel > select {
     width: 60%;
@@ -929,7 +708,95 @@
     width: 60%;
   }
 }
+@media (max-width: 910px) {
+  .linksMenu__burgerMenu {
+    display: block;
+    padding: 0.2rem 0.6rem;
+  }
+  .linksMenu__burgerMenu:hover {
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+  }
+
+  .navBar__linksMenu ul {
+    position: absolute;
+    width: 100%;
+    background-color: #57606f;
+    top: 121.23px;
+    left: -100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    z-index: 3;
+    transition: all 0.5s;
+  }
+
+  #burgerMenu__checkBtn:checked ~ ul {
+    left: 0;
+  }
+
+  .navBar__linksMenu li a:hover {
+    border-radius: 0px;
+    background-color: transparent;
+    border: none;
+    color: #024;
+  }
+
+  .headerSearch__input {
+    width: 400px;
+  }
+}
 @media (max-width: 767px) {
+  .travelCard_top {
+    margin: 1.2rem 0.8rem;
+  }
+
+  .travelCard__mid--date {
+    flex-direction: row;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    padding: 1.4rem 1rem;
+  }
+
+  .travelCard__mid--passanger {
+    flex-direction: row;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .travelCard__mid--date .icon,
+.travelCard__mid--passanger .icon {
+    display: block;
+  }
+
+  .travelCard__mid--date .travelCardMid_info:first-child,
+.travelCard__mid--passanger .travelCardMid_info:first-child {
+    margin-bottom: 0rem;
+  }
+
+  .travelCardMid_info--input {
+    width: 60% !important;
+  }
+
+  .accountInfo__grid {
+    display: none;
+  }
+
+  .accountInfo__login {
+    margin-bottom: 1.5rem;
+  }
+
+  .accountInfo__inputLabel > input,
+.accountInfo__inputLabel > select {
+    width: 70%;
+  }
+
+  .accountInfo__checkbox {
+    width: 70%;
+  }
+
   .accountInfo__grid {
     display: none;
   }
@@ -947,7 +814,42 @@
     width: 70%;
   }
 }
+@media (max-width: 740px) {
+  .headerSearch__input {
+    width: 100%;
+  }
+
+  .footerContainer__first {
+    display: none;
+  }
+
+  .travelFooter__container {
+    flex-direction: column;
+  }
+
+  .sectionDeals__title {
+    height: 150px;
+  }
+}
 @media (max-width: 540px) {
+  .headHeader__middle {
+    display: none;
+  }
+
+  .navBar__linksMenu ul {
+    flex-direction: column;
+  }
+  .navBar__linksMenu li {
+    padding: 1rem 0;
+  }
+  .navBar__linksMenu li a {
+    font-size: 1.3rem;
+  }
+
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+
   .accountInfo__inputLabel > input,
 .accountInfo__inputLabel > select {
     width: 90%;
@@ -960,5 +862,92 @@
   .accountInfo__button {
     display: flex;
     justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .headerNavBar__logo {
+    width: 110px;
+  }
+
+  .linksMenu__burgerMenu {
+    font-size: 2rem;
+    padding: 0.2rem 1rem;
+  }
+
+  .navBar__linksMenu ul {
+    top: 93.34px;
+  }
+
+  .travelMain__title {
+    display: none;
+  }
+
+  .travelCard_top {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0rem 0.8rem;
+  }
+
+  .travelCard_mid--location {
+    padding: 0.3rem 1rem;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .travelCardMid_info--toInput {
+    margin-top: 1.2rem;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .travelCard__mid--date,
+.travelCard__mid--passanger {
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .travelCard__mid--date .icon,
+.travelCard__mid--passanger .icon {
+    display: none;
+  }
+
+  .travelCard__mid--date .travelCardMid_info:first-child,
+.travelCard__mid--passanger .travelCardMid_info:first-child {
+    margin-bottom: 1.5rem;
+  }
+
+  .travelCardMid_info--input {
+    width: 100% !important;
+  }
+
+  .sectionDeals__title {
+    height: 120px;
+  }
+
+  .popularPlaces__button {
+    padding: 1rem 1rem;
+    margin: 1rem 0 1rem 0;
+    font-size: 14px;
+  }
+}
+@media (max-width: 330px) {
+  .gridCard__img {
+    height: 150px;
+  }
+
+  .cardBody__top {
+    flex-direction: column;
+  }
+
+  .travelCardMid_info--input label {
+    font-size: 20px;
+  }
+
+  .travelCardMid__info--input > label {
+    font-size: 20px;
   }
 }

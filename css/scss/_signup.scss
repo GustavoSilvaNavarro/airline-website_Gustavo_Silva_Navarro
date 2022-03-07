@@ -1,3 +1,4 @@
+/*
 //SIGN UP PAGE
 //MAIN
 .accountInfo {
@@ -15,7 +16,7 @@
     margin-bottom: $size * 2.5;
 
     > a {
-        text-decoration: none;
+        text-decoration: map-get($modelado, ninguno);
     }
 }
 
@@ -24,14 +25,12 @@
 }
 
 .accountInfo__inputLabel {
-    display: flex;
+    display: map-get($modelado, flexible);
     flex-direction: column;
     padding: 0.5rem 0;
-
     > label {
         font-size: $size * 1.25;
     }
-
     > input,
     > select {
         width: 30%;
@@ -51,6 +50,7 @@
     width: 30%;
 }
 
+
 //MEDIA QUERYS SIGN UP
 @media (max-width: 991px) {
     //SIGN UP
@@ -66,10 +66,11 @@
     }
 }
 
+
 @media (max-width: 767px) {
     //SIGN UP
     .accountInfo__grid {
-        display: none;
+        display: map-get($modelado, ninguno);
     }
 
     .accountInfo__login {
@@ -88,6 +89,7 @@
     }
 }
 
+
 @media (max-width: 540px) {
     //SIGN UP
     .accountInfo__inputLabel {
@@ -102,7 +104,8 @@
     }
 
     .accountInfo__button{
-        display: flex;
-        justify-content: center;
+        display: map-get($modelado, flexible);
+        justify-content: map-get($modelado, centro);
     }
 }
+*/
