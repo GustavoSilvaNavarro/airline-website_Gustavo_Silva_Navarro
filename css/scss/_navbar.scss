@@ -11,7 +11,7 @@
 }
 
 .headerNavBar__design {
-    @include flexStyle(space-between);
+    @include flexStyle(space-between, 'yes');
 }
 
 .headerNavBar__logo,
@@ -20,8 +20,7 @@
 }
 
 .headHeader__search {
-    display: map-get($modelado, flexible);
-    align-items: map-get($modelado, centro);
+    @include flexStyle(space-around, '');
     @include backBorderStyle(15px, white);
     padding: 0.2rem 0.4rem;
     i {

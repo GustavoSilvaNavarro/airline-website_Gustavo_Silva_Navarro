@@ -8,7 +8,7 @@
 .travelFooter__container {
     margin: 0 auto;
     width: 95%;
-    @include flexStyle(space-between);
+    @include flexStyle(space-between, 'yes');
 }
 
 .travelFooter__brand {
@@ -19,7 +19,7 @@
 }
 
 .container__socialMedia {
-    @include flexStyle(space-around);
+    @include flexStyle(space-around, 'yes');
 
     > a {
         margin: $size * 0.5;

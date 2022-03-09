@@ -33,7 +33,7 @@
 }
 
 .travelCard_mid {
-    @include flexStyle(space-around);
+    @include flexStyle(space-around, 'yes');
     padding: 1.4rem 1rem;
 }
 
@@ -207,8 +207,7 @@
 }
 
 .cardInfo__bottom {
-    display: map-get($modelado, flexible);
-    align-items: map-get($modelado, centro);
+    @include flexStyle(space-between, '');
 }
 
 .cardPrice__element--around {
@@ -320,7 +319,7 @@
     color: $dark-color-navbar;
     text-decoration: map-get($modelado, ninguno);
     width: 100%;
-    @include flexStyle(space-between);
+    @include flexStyle(space-between, 'yes');
     border-top: 1px solid $dark-color-navbar;
     padding: 0.5rem 0rem 0rem 0rem;
 
@@ -390,8 +389,7 @@
     border-radius: 0px 0px 15px 15px;
     height: 200px;
     width: 100%;
-    display: map-get($modelado, flexible);
-    align-items: map-get($modelado, centro);
+    @include flexStyle(space-around, '');
     > h1 {
         color: #fff;
         margin-left: $size * 1.5;

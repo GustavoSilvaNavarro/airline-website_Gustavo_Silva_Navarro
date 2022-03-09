@@ -1,8 +1,10 @@
 //MIXINGS
-@mixin flexStyle($position) {
+@mixin flexStyle($position, $enable) {
     display: flex;
     align-items: center;
-    justify-content: $position;
+    @if $enable == 'yes' {
+        justify-content: $position;
+    }
 }
 
 @mixin labelEffect($colorEffect) {
