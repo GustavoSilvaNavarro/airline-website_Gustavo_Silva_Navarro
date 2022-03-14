@@ -204,16 +204,16 @@
 
 @keyframes animate {
   0%, 100% {
-    background-image: url("../../img/back-photos/photo1.webp");
+    background-image: url("../img/back-photos/photo1.webp");
   }
   25% {
-    background-image: url("../../img/back-photos/photo3.webp");
+    background-image: url("../img/back-photos/photo3.webp");
   }
   50% {
-    background-image: url("../../img/back-photos/photo4.webp");
+    background-image: url("../img/back-photos/photo4.webp");
   }
   75% {
-    background-image: url("../../img/back-photos/photo5.webp");
+    background-image: url("../img/back-photos/photo5.webp");
   }
 }
 .sectionCard__title {
@@ -435,7 +435,7 @@
 }
 
 .sectionDeals__title {
-  background: url("../../img/img-pack/nepal.webp") no-repeat center center;
+  background: url("../img/img-pack/nepal.webp") no-repeat center center;
   background-size: cover;
   border-radius: 0px 0px 15px 15px;
   height: 200px;
