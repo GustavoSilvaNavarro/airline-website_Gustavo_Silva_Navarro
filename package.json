@@ -1,0 +1,24 @@
+{
+  "name": "1-airlinewebsitegsn",
+  "version": "1.0.0",
+  "description": "SkyLimit Airlines Website, new south american low cost company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "sass css/styles.scss css/styles.css -w --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WolfTavo/airline-website_Gustavo_Silva_Navarro.git"
+  },
+  "keywords": [],
+  "author": "Gustavo Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WolfTavo/airline-website_Gustavo_Silva_Navarro/issues"
+  },
+  "homepage": "https://github.com/WolfTavo/airline-website_Gustavo_Silva_Navarro#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
