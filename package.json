@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-sass": "sass css/styles.scss css/styles.css -w --no-source-map"
+    "build-sass": "sass scss/styles.scss css/styles.min.css -w --no-source-map -s compressed"
   },
   "repository": {
     "type": "git",

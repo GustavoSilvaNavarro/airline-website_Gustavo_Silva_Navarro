@@ -238,6 +238,12 @@
         display: map-get($modelado, flexible);
         justify-content: map-get($modelado, centro);
     }
+
+    //DEALS
+    .gridContainer__card--cardInfo {
+        width: 60%;
+        margin: auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -319,12 +325,33 @@
         margin: 1rem 0 1rem 0;
         font-size: 14px;
     }
+
+    .gridContainer__card--cardInfo {
+        width: 80%;
+        margin: auto;
+    }
 }
 
 @media (max-width: 330px) {
     //INDEX
     .gridCard__img {
         height: 150px;
+    }
+
+    //DEALS
+    .popularPlaces {
+        margin: 0rem;
+    }
+
+    .popularPlaces__subtitle {
+        text-align: map-get($modelado, centro);
+        font-size: $size * 1.8;
+        padding-bottom: $size;
+    }
+
+    .gridContainer__card--cardInfo {
+        width: 100%;
+        margin: auto;
     }
 
     //TRIPS
